@@ -1,0 +1,70 @@
+● magnuspi
+    State: running
+     Jobs: 0 queued
+   Failed: 0 units
+    Since: Thu 1970-01-01 08:00:04 +08; 51 years 10 months ago
+   CGroup: /
+           ├─user.slice 
+           │ └─user-1000.slice 
+           │   ├─session-8.scope 
+           │   │ ├─ 1997 sshd: pi [priv]
+           │   │ ├─ 2003 sshd: pi@notty
+           │   │ ├─ 2004 bash
+           │   │ ├─ 2067 sh /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/server.sh --start-server --host=127.0.0.1 --enable-remote-auto-shutdown --port=0 --connection-secret /home/pi/.vscode-server/.3a6960b964327f0e3882ce18fcebd07ed191b316.token
+           │   │ ├─ 2074 /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/node /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/out/vs/server/main.js --start-server --host=127.0.0.1 --enable-remote-auto-shutdown --port=0 --connection-secret /home/pi/.vscode-server/.3a6960b964327f0e3882ce18fcebd07ed191b316.token
+           │   │ ├─ 2202 /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/node /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/out/bootstrap-fork --type=ptyHost
+           │   │ ├─ 2319 /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/node /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/out/bootstrap-fork --type=extensionHost --uriTransformerPath=/home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/out/vs/server/uriTransformer.js
+           │   │ ├─ 2326 /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/node /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/out/bootstrap-fork --type=watcherServiceChokidar
+           │   │ ├─ 2353 /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/node /home/pi/.vscode-server/bin/3a6960b964327f0e3882ce18fcebd07ed191b316/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=2319
+           │   │ ├─15626 /usr/bin/bash
+           │   │ ├─15642 /usr/bin/bash
+           │   │ ├─15658 htop
+           │   │ ├─21743 sleep 180
+           │   │ └─22096 systemctl status
+           │   ├─session-9.scope 
+           │   │ ├─ 2260 sshd: pi [priv]
+           │   │ ├─ 2266 sshd: pi@notty
+           │   │ ├─ 2267 bash
+           │   │ └─21951 sleep 180
+           │   ├─user@1000.service 
+           │   │ └─init.scope 
+           │   │   ├─784 /lib/systemd/systemd --user
+           │   │   └─785 (sd-pam)
+           │   └─session-1.scope 
+           │     ├─526 /bin/login -p --
+           │     └─805 -bash
+           ├─init.scope 
+           │ └─1 /sbin/init
+           └─system.slice 
+             ├─systemd-timesyncd.service 
+             │ └─330 /lib/systemd/systemd-timesyncd
+             ├─dbus.service 
+             │ └─389 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+             ├─hciuart.service 
+             │ └─562 /usr/bin/hciattach /dev/serial1 bcm43xx 921600 noflow - b8:27:eb:89:e4:38
+             ├─ssh.service 
+             │ └─527 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
+             ├─avahi-daemon.service 
+             │ ├─387 avahi-daemon: running [magnuspi.local]
+             │ └─446 avahi-daemon: chroot helper
+             ├─wpa_supplicant.service 
+             │ └─409 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+             ├─triggerhappy.service 
+             │ └─407 /usr/sbin/thd --triggers /etc/triggerhappy/triggers.d/ --socket /run/thd.socket --user nobody --deviceglob /dev/input/event*
+             ├─systemd-logind.service 
+             │ └─406 /lib/systemd/systemd-logind
+             ├─cron.service 
+             │ └─388 /usr/sbin/cron -f
+             ├─systemd-udevd.service 
+             │ └─157 /lib/systemd/systemd-udevd
+             ├─rsyslog.service 
+             │ └─399 /usr/sbin/rsyslogd -n -iNONE
+             ├─bluetooth.service 
+             │ └─619 /usr/libexec/bluetooth/bluetoothd
+             ├─systemd-journald.service 
+             │ └─135 /lib/systemd/systemd-journald
+             ├─dhcpcd.service 
+             │ ├─531 wpa_supplicant -B -c/etc/wpa_supplicant/wpa_supplicant.conf -iwlan0
+             │ └─774 /usr/sbin/dhcpcd -w
+             └─rng-tools-debian.service 
+               └─505 /usr/sbin/rngd -r /dev/hwrng
